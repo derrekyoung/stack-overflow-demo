@@ -1,0 +1,15 @@
+[Options]
+; If you don't like this base template click on 'Settings' at the left
+; side and change it to your own needs!
+
+; Script only run on the specified environments
+@include[] = /^https?://stackoverflowteams.com/.*$/
+
+; Gets rid of Errors in the Controller
+; !querySelector(.platform-notification-message-error , style.display) = none
+
+; Make the use of commands easier by importing the namespace
+@namespace[] = so
+
+Stack External Demo = "Acme Corp"
+Free team = ""
