@@ -12,9 +12,6 @@ $topBarItemColor = //Top Bar item colour - should be black or white, depending o
 $companyName = // Company name, e.g. Acme Corp
 $companyLogo = //Use a Square Logo, e.g. #Convert images to base64 here: https://www.base64-image.de/
 
-// Import the demo template for easier copy/pasta. Make edits here for easier re-use.
-+DemoTemplate
-
 ;-----------------------------------------------------
 #Company Name
 Stack External Demo = ${companyName}
