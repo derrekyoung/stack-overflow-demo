@@ -5,27 +5,26 @@
 ; Script only run on the demo environments by default
 @include[] = /^https?://stackoverflowteams.com/.*$/
 
-// Start editing here
-#Variables: Change in the Tab Above
-$topBarColor = # Top Bar color, e.g. #000000
-$topBarItemColor = # Top Bar item colour - should be black or white, depending on Top Bar Colour, e.g. #00ade4
-$companyName = # Company name, e.g. Acme Corp
-$companyLogo = # Use a Square Logo, e.g. #Convert images to base64 here: https://www.base64-image.de/
-$companyFirstLetter = # First letter of the company's name
+; Variables: Change in the Tab Above
+$topBarColor = ; Top Bar color, e.g. #000000
+$topBarItemColor = ; Top Bar item colour - should be black or white, depending on Top Bar Colour, e.g. #00ade4
+$companyName = ; Company name, e.g. Acme Corp
+$companyLogo = ; Use a Square Logo, e.g. #Convert images to base64 here: https://www.base64-image.de/
+$companyFirstLetter = ; First letter of the company's name, e.g. "S"
 
 
 ;-----------------------------------------------------
 ; You can ignore the below parts and simply update the variables above
 ;-----------------------------------------------------
-#Company Name
+; Company Name
 Stack External Demo = ${companyName}
 Free team = ""
 
 ;-----------------------------------------------------
-# Replace Top Bar colors
-# Background color
+; Replace Top Bar colors
+; Background color
 !querySelector(.s-topbar, style.background-color) = ${topBarColor}
-# Text color
+; Text color
 !querySelector(.s-topbar--item, style.color) = ${topBarItemColor}
 
 ; Replace background and font colors for buttons
@@ -33,10 +32,3 @@ Free team = ""
 !querySelector(.s-btn__filled, style.background-color) = ${topBarItemColor}
 !querySelector(.s-btn__primary, style.color) = "#FFFFFF"
 !querySelector(.s-btn__primary, style.visited) = ${topBarBGColor}
-
-; Change color of the active items in 
-!querySelector(a.is-selected, style.background-color) = ${topBarItemColor}
-
-; Change the letter shown in the upper-left "image" area. Don't upload a real image or this'll break
-!querySelector(nav div.s-avatar--letter) = ${companyFirstLetter}
-
